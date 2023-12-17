@@ -122,6 +122,12 @@
             <artifactId>lwjgl-stb</artifactId>
             <classifier>${lwjgl.natives}</classifier>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.typesafe.slick/slick -->
+        <dependency>
+            <groupId>org.slick</groupId>
+            <artifactId>slick-util</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
     </dependencies>
 

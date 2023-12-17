@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79647901-0ae9-421f-ae60-004614c0d661" name="Changes" comment="Added functional window">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Mesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Renderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Shader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Vertex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/utils/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/shaders/mainFragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/shaders/mainVertex.glsl" afterDir="false" />
+    <list default="true" id="79647901-0ae9-421f-ae60-004614c0d661" name="Changes" comment="Added Shaders">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/core/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/core/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/core/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/core/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Mesh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Shader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Vertex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/maths/Vector3f.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/maths/Vector3f.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/shaders/mainFragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shaders/mainFragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/shaders/mainVertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shaders/mainVertex.glsl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Damyan/Desktop/tusofia/prs kursova/kursova/KgProekt/src/main/resources",
+    "last_opened_file_path": "C:/Users/Damyan/Desktop/tusofia/KG proekt/KgProekt",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -62,6 +63,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Damyan\Desktop\tusofia\prs kursova\kursova\KgProekt" />
       <recent name="C:\Users\Damyan\Desktop\tusofia\prs kursova\kursova\KgProekt\src\main\resources\shaders" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -125,12 +127,20 @@
       <option name="project" value="LOCAL" />
       <updated>1702831270996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Shaders">
+      <created>1702840601182</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702840601182</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added functional window" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functional window" />
+    <MESSAGE value="Added Shaders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Shaders" />
   </component>
 </project>
