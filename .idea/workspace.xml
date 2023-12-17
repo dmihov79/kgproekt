@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79647901-0ae9-421f-ae60-004614c0d661" name="Changes" comment="Added Shaders">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/core/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/core/Input.java" afterDir="false" />
+    <list default="true" id="79647901-0ae9-421f-ae60-004614c0d661" name="Changes" comment="Added Camera View and cube of drawing">
       <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/core/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/core/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Mesh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Shader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/graphics/Vertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/maths/Vector3f.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/maths/Vector3f.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tu/sofia/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tu/sofia/utils/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/shaders/mainFragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shaders/mainFragment.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/shaders/mainVertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shaders/mainVertex.glsl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,13 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702840601182</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Camera View and cube of drawing">
+      <created>1702842498714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702842498714</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added functional window" />
     <MESSAGE value="Added Shaders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Shaders" />
+    <MESSAGE value="Added Camera View and cube of drawing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Camera View and cube of drawing" />
   </component>
 </project>

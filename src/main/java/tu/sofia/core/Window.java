@@ -8,6 +8,9 @@ import org.lwjgl.opengl.GL11;
 import tu.sofia.maths.Matrix4f;
 import tu.sofia.maths.Vector3f;
 
+import static org.lwjgl.glfw.GLFW.GLFW_CURSOR;
+import static org.lwjgl.glfw.GLFW.GLFW_CURSOR_DISABLED;
+
 public class Window {
 	private int width, height;
 	private String title;
@@ -37,6 +40,7 @@ public class Window {
 		
 		input = new Input();
 		window = GLFW.glfwCreateWindow(width, height, title, isFullscreen ? GLFW.glfwGetPrimaryMonitor() : 0, 0);
+		GLFW.glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 		
 		if (window == 0) {
 			System.err.println("ERROR: Window wasn't created");
@@ -128,7 +132,7 @@ public class Window {
 	}
 	
 	public void mouseState(boolean lock) {
-		GLFW.glfwSetInputMode(window, GLFW.GLFW_CURSOR, lock ? GLFW.GLFW_CURSOR_DISABLED : GLFW.GLFW_CURSOR_NORMAL);
+		GLFW.glfwSetInputMode(window, GLFW_CURSOR, lock ? GLFW_CURSOR_DISABLED : GLFW.GLFW_CURSOR_NORMAL);
 	}
 
 	public int getWidth() {
