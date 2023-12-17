@@ -5,6 +5,7 @@ import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.glfw.GLFWWindowSizeCallback;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
+import tu.sofia.maths.Vector3f;
 
 import javax.management.monitor.Monitor;
 
@@ -16,7 +17,7 @@ public class Window {
     public int frames;
     public static long time;
     public Input input;
-    private float backgroundR, backgroundG, backgroundB;
+    private Vector3f backgroundColorRGB = new Vector3f(0, 0, 0);
     private GLFWWindowSizeCallback windowSizeCallback;
     private boolean isResized, isFullScreen = false;
     private int[] windowX = new int[1], windowY = new int[1];
@@ -77,7 +78,7 @@ public class Window {
             GL11.glViewport(0,0,width,height);
             isResized = false;
         }
-        GL11.glClearColor(backgroundR, backgroundG, backgroundB, 1.0f);
+        GL11.glClearColor(backgroundColorRGB.getX(), backgroundColorRGB.getY(), backgroundColorRGB.getZ(), 1.0f);
         GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
         GLFW.glfwPollEvents();
         frames++;
@@ -96,9 +97,9 @@ public class Window {
         return GLFW.glfwWindowShouldClose(window);
     }
     public void setBackgroundColor(float r, float g, float b){
-        backgroundR = r;
-        backgroundG = g;
-        backgroundB = b;
+        backgroundColorRGB.setX(r);
+        backgroundColorRGB.setY(g);
+        backgroundColorRGB.setZ(b);
     }
     public void destroy(){
         input.destroy();

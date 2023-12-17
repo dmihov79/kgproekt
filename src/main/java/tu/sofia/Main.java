@@ -4,19 +4,36 @@ package tu.sofia;
 import org.lwjgl.glfw.GLFW;
 import tu.sofia.core.Input;
 import tu.sofia.core.Window;
+import tu.sofia.graphics.Mesh;
+import tu.sofia.graphics.Renderer;
+import tu.sofia.graphics.Shader;
+import tu.sofia.graphics.Vertex;
+import tu.sofia.maths.Vector3f;
 
 public class Main implements Runnable{
 
     public Thread game;
     public static Window window;
+    public Renderer renderer;
+    public Shader shader;
 
     public static final int WIDTH = 1280, HEIGHT = 760;
+    private Mesh mesh = new Mesh(new Vertex[]{
+            new Vertex(new Vector3f(-0.5f, 0.5f, 0.0f)),
+            new Vertex(new Vector3f(0.5f, 0.5f, 0.0f)),
+            new Vertex(new Vector3f(0.5f, -0.5f, 0.0f)),
+            new Vertex(new Vector3f(-0.5f, -0.5f, 0.0f)),
+    }, new int[]{
+            0,1,2,
+            0,3,2
+    });
 
     public void start(){
         game = new Thread(this,"game");
         game.start();
     }
     private void render() {
+        renderer.renderMesh(mesh);
         window.swapBuffers();
     }
 
@@ -26,10 +43,14 @@ public class Main implements Runnable{
             System.out.println("X: " + Input.getMouseX() + " Y: " + Input.getMouseY());
     }
 
-    private static void init() {
+    private void init() {
         window = new Window(WIDTH, HEIGHT, "Game");
+        shader = new Shader("/shaders/mainVertex.glsl", "/shaders/mainFragment.glsl");
+        renderer = new Renderer(shader);
         window.setBackgroundColor(1.0f, 0.0f, 0.0f);
         window.create();
+        mesh.create();
+        shader.create();
     }
     public void run(){
         init();
